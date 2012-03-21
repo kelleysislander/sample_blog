@@ -16,25 +16,21 @@
 ActiveRecord::Base.configurations[:development] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', 'sample_blog_development.db')
-
 }
 
 ActiveRecord::Base.configurations[:beaglebone] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', 'sample_blog_beaglebone.db')
-
 }
 
 ActiveRecord::Base.configurations[:production] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', 'sample_blog_production.db')
-
 }
 
 ActiveRecord::Base.configurations[:test] = {
   :adapter => 'sqlite3',
   :database => Padrino.root('db', 'sample_blog_test.db')
-
 }
 
 # Setup our logger

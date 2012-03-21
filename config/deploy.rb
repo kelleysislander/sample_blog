@@ -1,6 +1,8 @@
 # cap deploy:setup
 
 require 'capistrano/ext/multistage'
+
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))  # Add RVM's lib directory to the load path.
 require "rvm/capistrano"                                # Load RVM's capistrano plugin.
 
 set :stages, %w(beaglebone staging)
@@ -16,7 +18,7 @@ puts "ENV['rvm_path']"
 puts "rvm_path => #{ENV['rvm_path']}"
 puts "END ENV['rvm_path']"
 
-pute "ENV['PADRINO_ENV'] ="
+puts "ENV['PADRINO_ENV'] ="
 puts ENV['PADRINO_ENV']
 
 namespace :deploy do
