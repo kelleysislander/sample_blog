@@ -18,9 +18,31 @@ puts "ENV['rvm_path']"
 puts "rvm_path => #{ENV['rvm_path']}"
 puts "END ENV['rvm_path']"
 
-puts "ENV['PADRINO_ENV'] ="
+puts "beg ENV['PADRINO_ENV'] ="
 puts ENV['PADRINO_ENV']
+puts "end ENV['PADRINO_ENV'] ="
 
+=begin
+NOTE:  after "cap deploy:setup" you must ssh onto the server and manually create the 
+
+"/var/www/vhosts/sample_blog.semaphoremobile.com/shared/config/" dir 
+
+and then
+
+"chmod g+w /var/www/vhosts/sample_blog.semaphoremobile.com/shared/config"
+
+Then you can:
+
+"cap beaglebone deploy" 
+
+and after that is successful you can run these rake tasks:
+
+bundle exec padrino rake ar:create -e beaglebone
+bundle exec padrino rake ar:migrate -e beaglebone
+bundle exec padrino rake seed -e beaglebone
+bundle exec padrino start -e beaglebone
+
+=end
 namespace :deploy do
 
   desc "Restarting mod_rails with restart.txt, capistrano runs this by default"
