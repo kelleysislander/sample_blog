@@ -1,0 +1,27 @@
+.group
+  =f.label :title
+  =f.error_message_on :title
+  =f.text_field :title, :class => :text_field
+  %span.description Ex: a simple text
+
+.group
+  =f.label :body
+  =f.error_message_on :body
+  ~f.text_area :body, :class => :text_area
+  %span.description Ex: a simple text
+
+-# .group
+-#   =f.label :account_id
+-#   =f.error_message_on :account_id
+-#   =f.text_area :account_id, :class => :text_field
+-#   %span.description The Account ID
+
+.group
+  =f.label :account_id
+  =f.error_message_on :account_id
+  =f.select(:account_id, :collection => Account.all, :fields => [:email, :id])
+  %span.description The Account
+  
+.group.navform.wat-cf
+  =f.submit pat(:save), :class => :button
+  =f.submit pat(:cancel), :onclick => "window.location='#{url(:posts, :index)}';return false", :class => :button
