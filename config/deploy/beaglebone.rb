@@ -22,7 +22,8 @@ set :gem_path, '/home/root/.rvm/gems/ruby-1.9.2-p290:/home/deploy/.rvm/gems/ruby
 #############################################################
 
 default_run_options[:pty] = true
-set :chmod755, "app admin config db lib public public/*"
+# set :chmod755, "app admin config db lib public public/*"
+set :chmod755, "app admin config db lib public vendor script script/* public/*"
 set :ssh_options, { :forward_agent => true }
 set :use_sudo, false
 set :scm_verbose, true
