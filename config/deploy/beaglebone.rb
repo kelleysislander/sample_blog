@@ -27,7 +27,7 @@ set :chmod755, "app admin config db lib public vendor script script/* public/*"
 set :ssh_options, { :forward_agent => true }
 set :use_sudo, false
 set :scm_verbose, true
-set :padrino_env, "beaglebone"
+set :rails_env, "beaglebone"
 set :bundle_flags, "--deployment"
 set :rvm_shell, '/home/root/.rvm/bin/rvm-shell'
 

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>config/deploy.rb</string>
+	<string>.rvmrc</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -16,12 +16,50 @@
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
+		<dict>
+			<key>filename</key>
+			<string>.rvmrc</string>
+			<key>lastUsed</key>
+			<date>2012-03-22T16:55:11Z</date>
+			<key>selected</key>
+			<true/>
+		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>330</integer>
 	<key>metaData</key>
 	<dict>
 		<key>.rvmrc</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>30</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+		<key>Capfile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -226,21 +264,21 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>37</integer>
+				<integer>10</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>14</integer>
+			<integer>0</integer>
 		</dict>
 		<key>config/deploy/beaglebone.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>10</integer>
 				<key>line</key>
-				<integer>7</integer>
+				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -302,10 +340,10 @@
 		<string>admin/views/posts/_form.haml</string>
 		<string>config/deploy.rb</string>
 		<string>config/database.rb</string>
-		<string>.rvmrc</string>
 		<string>config/deploy/beaglebone.rb</string>
+		<string>.rvmrc</string>
+		<string>Capfile</string>
 		<string>app/views/layouts/application.html.haml</string>
-		<string>public/stylesheets/application.css</string>
 		<string>public/stylesheets/reset.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>

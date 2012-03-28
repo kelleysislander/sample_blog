@@ -1,5 +1,8 @@
 source :rubygems
 
+# Padrino Stable Gem
+gem 'padrino', '0.10.6'
+
 # Server requirements
 # gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
@@ -18,9 +21,6 @@ gem 'sqlite3'
 # Test requirements
 gem 'shoulda', :group => "test"
 gem 'rack-test', :require => "rack/test", :group => "test"
-
-# Padrino Stable Gem
-gem 'padrino', '0.10.6'
 
 # deploy
 gem 'capistrano'
